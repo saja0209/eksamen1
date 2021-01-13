@@ -1,0 +1,208 @@
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+/* ----- Style af navigation og header----- */
+nav {
+    padding-top: 10px;
+    margin: 0;
+}
+
+#header_top {
+    font-size: 3rem;
+}
+
+#header_bottom a {
+    font-size: 1.2rem;
+    margin: 1rem 1.6rem;
+}
+
+#header_bottom {
+    background: rgba(255, 255, 255, 0.4)
+}
+
+#header {
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+
+body {
+    /* søg på google: dark wallpaper high resolution */
+    /* Responsive sizer */
+    background-image: url(../billeder/forside.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.maintxt {
+    line-height: 160%;
+}
+
+.wrapper1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.emne {
+    font-size: 1.7rem;
+}
+
+.liste {
+        font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.leringsmaal {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    margin: 1rem;
+}
+.txt {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    margin: 1rem;
+}
+.media {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+@media (max-width:1200px) {
+    .wrapper1 {
+        display: grid;
+        grid-template-columns: none;
+    }
+
+    .billeder {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+/* -----Dette er din template fremadrettet----- */
+
+@media (min-width:1200px) {
+
+    .a {
+        width: 100px;
+        height: 100px;
+    }
+
+    .ab {
+        position: absolute;
+        width: 0px;
+        -webkit-transition: width 0.3s linear 0s;
+        transition: width 0.3s linear 0s;
+        z-index: 10;
+    }
+
+    .a:hover + .ab {
+        width: 600px;
+        height: auto;
+    }
+}
+
+video {
+    height: auto;
+    width: 100%;
+}
+.before {
+    padding: 1rem 0;
+}
+.after {
+    padding: 1rem 0;
+}
+
+
+
+.beforetxt , .aftertxt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.beforetxt b{
+    width: 100px;
+}
+
+button {
+    text-align: right;
+}
+
+.lightbox {
+  /* Default to hidden */
+  display: none;
+
+  /* Overlay entire screen */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  /* A bit of padding around image */
+  padding: 1em;
+
+  /* Translucent background */
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
+  display: block;
+}
+
+.lightbox span {
+  /* Full width and height */
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  /* Size and position background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+}
+
+.ab {
+    width: 0px;
+}
+
+h4 {
+    font-size: 1.5rem;
+}

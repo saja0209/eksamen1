@@ -1,0 +1,79 @@
+body {
+    font-
+    family: 'Playfair Display', serif;
+}
+
+/* ----- Style af navigation og header----- */
+nav {
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#header_top {
+    font-size: 3rem;
+}
+
+#header_bottom a {
+    font-size: 1.2rem;
+    margin: 1rem 1.6rem;
+}
+
+#header_bottom {
+    background: rgba(255, 255, 255, 0.4)
+}
+#header {
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+
+body {
+    /* søg på google: dark wallpaper high resolution */
+    /* Responsive sizer */
+    background-image: url(billeder/forside.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+.play img {
+    padding: 10px;
+    height: 80px;
+    margin: 1rem;
+}
+
+.play img:hover{
+    cursor: pointer;
+    transform:scale(1.2);
+}
+
+
+.media video {
+    display: none;
+}
+
+.media video.shown {
+    display:inline;
+}
+
+
+@media (max-width:1200px) {
+    .media video {
+        width: 100%;
+    }
+}
+
+
+

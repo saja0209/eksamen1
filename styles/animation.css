@@ -1,0 +1,168 @@
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+/* ----- Style af navigation og header----- */
+h2 {
+    text-align: center;
+}
+nav {
+    padding-top: 10px;
+    margin: 0;
+}
+
+#header_top {
+    font-size: 3rem;
+}
+
+#header_bottom a {
+    font-size: 1.2rem;
+    margin: 1rem 1.6rem;
+}
+
+#header_bottom {
+    background: rgba(255, 255, 255, 0.4)
+}
+
+#header {
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+
+body {
+    /* søg på google: dark wallpaper high resolution */
+    /* Responsive sizer */
+    background-image: url(../billeder/forside.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    padding-top: 1rem;
+}
+
+.maintxt {
+    line-height: 160%;
+}
+
+.wrapper1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.emne {
+    font-size: 1.7rem;
+}
+
+.liste {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.leringsmaal {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    margin: 1rem;
+}
+.txt {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    margin: 1rem;
+}
+.media {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+@media (max-width:1200px) {
+    .wrapper1 {
+        display: grid;
+        grid-template-columns: none;
+    }
+
+    .billeder {
+        width: 100%;
+    }
+
+}
+
+@media (min-width:1200px) {
+
+    .a {
+        width: 100px;
+        height: 100px;
+    }
+
+    .ab {
+        position: absolute;
+        width: 0px;
+        -webkit-transition: width 0.3s linear 0s;
+        transition: width 0.3s linear 0s;
+        z-index: 10;
+    }
+
+    .a:hover + .ab {
+        width: 550px;
+    }
+        .abb {
+        position: absolute;
+        width: 0px;
+        -webkit-transition: width 0.3s linear 0s;
+        transition: width 0.3s linear 0s;
+        z-index: 10;
+    }
+
+    .a:hover + .abb {
+        width: 850px;
+    }
+    .pdf {
+        width: 400px;
+    }
+}
+
+.pdf {
+    width: 100%;
+}
+
+.haii {
+    padding-top: 2rem;
+}
+
+.spil1 {
+    font-size: 1.5rem;
+}
+
+.ab {
+    width: 0px;
+}
+.abb {
+    width: 0px;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+.txt {
+    line-height: 160%;
+}
+
+.spil2 {
+    padding-top: 2rem;
+}

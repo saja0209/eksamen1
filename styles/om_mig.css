@@ -1,0 +1,90 @@
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+/* ----- Style af navigation og header----- */
+nav {
+    padding-top: 10px;
+    margin: 0;
+}
+
+#header_top {
+    font-size: 3rem;
+}
+
+#header_bottom a {
+    font-size: 1.2rem;
+    margin: 1rem 1.6rem;
+}
+
+#header_bottom {
+    background: rgba(255, 255, 255, 0.4)
+}
+#header {
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    padding-top: 1rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+.txt1 {
+    line-height: 1.6rem;
+}
+
+body {
+    /* søg på google: dark wallpaper high resolution */
+    /* Responsive sizer */
+    background-image: url(../billeder/forside.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+@media (min-width: 1000px) {
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    padding: 0;
+}
+
+
+
+.mig_container {
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+
+.mig_container2 {
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+}
+
+.txt1 {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 0.3rem;
+}
